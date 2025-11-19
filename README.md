@@ -1,79 +1,52 @@
-🩺 Diabetes Prediction Using SVM (Machine Learning)
+# 🩺 Diabetes Prediction Using SVM (Machine Learning)
 
-This project predicts whether a person is diabetic or not using the PIMA Indians Diabetes Dataset.
-The model is built using Support Vector Machine (SVM) in Python.
+This project predicts whether a person is diabetic or not using the **PIMA Indians Diabetes Dataset**.  
+The entire pipeline includes data preprocessing, feature scaling, SVM model training, accuracy evaluation, and real-time prediction.
 
+---
 
-📌 Project Overview
+## 📌 Project Overview
+This machine learning project follows these steps:
 
-Loaded the dataset
+- Load and explore the dataset  
+- Clean and preprocess the data  
+- Split into training & testing sets  
+- Apply feature scaling  
+- Train a Support Vector Machine (SVM) model  
+- Evaluate performance using accuracy score  
+- Build a simple prediction system for new input data  
 
-Performed data analysis
+---
 
-Split the dataset into training and test sets
+## 🧠 Machine Learning Model Used
 
-Scaled the feature values
+### **Support Vector Machine (SVM)**
+- Kernel: `linear`  
+- Suitable for binary classification  
+- Works well with medical datasets  
+- Provides a clear margin of separation  
 
-Trained an SVM (linear kernel) model
+---
 
-Calculated accuracy
+## 📊 Model Performance
 
-Built a prediction system to check if a person is diabetic
+| Metric | Score |
+|--------|--------|
+| **Training Accuracy** | **78.66%** |
+| **Testing Accuracy**  | **77.27%** |
 
+---
 
+## 📁 Dataset
+- **Name:** PIMA Indians Diabetes Dataset  
+- **Rows:** 768  
+- **Features:** 8 medical attributes (Glucose, BMI, Age, etc.)  
+- **Target:** 0 = Non-diabetic, 1 = Diabetic  
 
+---
 
-🧠 Machine Learning Model Used
+## 🚀 How to Run This Project
 
-Support Vector Machine (SVM)
-
-Kernel used: linear
-
-Best for binary classification problems like diabetes prediction
-
-Works well when data is linearly separable
-
-
-📊 Model Performance
-
-Training Accuracy: add your training accuracy here
-
-Testing Accuracy: add your testing accuracy here
-
-
-🚀 How to Run the Project
-1️⃣ Install required Python libraries
-pip install numpy
-pip install pandas
-pip install scikit-learn
-
-2️⃣ Open the notebook
-jupyter notebook Diabetes_Prediction.ipynb
-
-3️⃣ Run all cells
-
-This will:
-
-Load the dataset
-
-Preprocess data
-
-Train the SVM model
-
-Show the accuracy
-
-Make predictions
-
-
-📁 Files in This Repository
-Diabetes_Prediction.ipynb   → Main code for training and prediction
-diabetes.csv                → Dataset used in the project
-README.md                   → Project documentation
-
-
-
-
-✅ Conclusion
-
-This project demonstrates how an SVM model can be used to predict diabetes based on important health features.
-It offers a simple and effective machine learning workflow.
+### 1️⃣ Install required libraries
+```bash
+pip install numpy pandas scikit-learn
